@@ -1,0 +1,19 @@
+test> use blog
+
+blog> db.createCollection("ak")
+
+blog> db.ak.insertOne({Empname:"Sajin",Empid:1,Empsalary:100000,Empdesignation:"DataAnalyst"})
+
+
+TO see the values after insertion
+
+blog> db.ak.find()
+[
+  {
+    _id: ObjectId('66ec0317c3ef45bc13c73bf8'),
+    Empname: 'Sajin',
+    Empid: 1,
+    Empsalary: 100000,
+    Empdesignation: 'DataAnalyst'
+  }
+]
